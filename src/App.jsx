@@ -6,9 +6,8 @@ function App() {
   const endDate = new Date("2025-04-02");
   const today = new Date();
 
-  const percentHealed = Math.round(
-    ((today - startDate) / (endDate - startDate)) * 100
-  );
+  const percentHealed =
+    Math.round(((today - startDate) / (endDate - startDate)) * 10000) / 100;
 
   return (
     <>
